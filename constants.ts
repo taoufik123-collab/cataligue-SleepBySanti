@@ -12,8 +12,8 @@ export const VELVET_COLLECTION: Product[] = [
     price: '€244.89', // Matched to "Luxury Velvet Bedding Set" in CSV
     description: 'A dramatic blend of acrylic and pure cotton featuring artistic fringe details. The heavy drape adds immediate perceived value to any suite.',
     features: ['Artistic fringe details', 'High-impact emerald & jewel tones', 'Soft cotton-acrylic blend'],
-    // Image: CYRA Luxury Velvet Bedding Set
-    imageUrl: 'https://sleepbysanti.co/cdn/shop/files/earth_500x.jpg',
+    // Image: CYRA (White variant from CSV)
+    imageUrl: 'https://sleepbysanti.co/cdn/shop/files/WHITE_62bd27c4-d1fe-4891-b946-aa2bc3840537_800x.jpg?v=1764367931',
     colors: ['Emerald', 'Ruby', 'Sapphire']
   },
   {
@@ -22,7 +22,7 @@ export const VELVET_COLLECTION: Product[] = [
     price: '€288.63',
     description: 'Fine velvet with a soft finish and shiny appearance. Designed to catch ambient lighting, creating a warm, inviting atmosphere.',
     features: ['Premium craftsmanship', 'Subtle sheen', 'Rich texture'],
-    // Image: Amorgos Soft Velvet Bedding (Creme) - using JPG for better reliability
+    // Image: Amorgos Soft Velvet Bedding (Creme)
     imageUrl: 'https://sleepbysanti.co/cdn/shop/files/Amorgoscreme_500x.jpg',
     colors: ['Creme', 'Navy', 'Charcoal']
   },
@@ -42,8 +42,8 @@ export const VELVET_COLLECTION: Product[] = [
     price: '€271.13',
     description: 'Plush feel with a subtle sheen from cotton-acrylic yarn mix. Engineered for high-traffic use with resistance to pilling.',
     features: ['Plush texture', 'Commercial Durability', 'Elegant drape'],
-    // Image: Kefalonia Luxe Velvet Bedding (Coffee) - using JPG for better reliability
-    imageUrl: 'https://sleepbysanti.co/cdn/shop/files/COFFEE_500x.jpg',
+    // Image: Kefalonia (Black variant from CSV)
+    imageUrl: 'https://sleepbysanti.co/cdn/shop/files/Black_a5e01a1a-1068-42a9-8a16-389aa533eb93_800x.jpg?v=1756631017',
     colors: ['Coffee', 'Ivory', 'Gray']
   },
   {
@@ -65,8 +65,8 @@ export const EUCALYPTUS_COLLECTION: Product[] = [
     price: '€288.63',
     description: 'Signature Eucalyptus Lyocell. Research indicates guests sleep 20% cooler compared to standard cotton, reducing HVAC load.',
     features: ['Naturally soft', 'Lustrous sheen', 'Temperature regulating'],
-    // Image: FLORE Eucalyptus Summer Comforter (Blanc)
-    imageUrl: 'https://sleepbysanti.co/cdn/shop/files/Blanc_500x.jpg',
+    // Image: FLORE (Noir variant from CSV)
+    imageUrl: 'https://sleepbysanti.co/cdn/shop/files/NOIR_37d18166-4f60-4450-b089-e38834ae324f_800x.jpg?v=1718224648',
     colors: ['White', 'Mist', 'Blush']
   },
   {
@@ -75,8 +75,8 @@ export const EUCALYPTUS_COLLECTION: Product[] = [
     price: '€288.63',
     description: 'Summer cooling focus. The weave structure maximizes airflow, making it the preferred choice for tropical or summer-season resorts.',
     features: ['Maximum breathability', 'Eco-friendly lyocell', 'Cool-to-touch'],
-    // Image: DIA Over-Sized Eucalyptus Comforter Set (Blue)
-    imageUrl: 'https://sleepbysanti.co/cdn/shop/files/SLEEP-Blue_500x.jpg',
+    // Image: DIA (Blue variant from CSV)
+    imageUrl: 'https://sleepbysanti.co/cdn/shop/files/blue_done_800x.jpg?v=1737121603',
     colors: ['Sky', 'Cloud', 'Lavender']
   },
   {
@@ -117,8 +117,8 @@ export const CORE_PRODUCTS: Product[] = [
     price: '€166.16',
     description: 'The foundation of the guest experience. Available in premium Eucalyptus or Cotton options.',
     features: ['Deep pockets (18")', 'Precision stitching', 'Includes 1 fitted, 1 flat'],
-    // Image: Flat Fitted Sheet By SANTI (Fog)
-    imageUrl: 'https://sleepbysanti.co/cdn/shop/files/Fog_500x.jpg'
+    // Image: Essential Sheet Set (Blanc variant from CSV)
+    imageUrl: 'https://sleepbysanti.co/cdn/shop/files/Blanc_598aacb2-cadf-4587-b92b-9e845956133d_800x.jpg?v=1725827255'
   },
   {
     id: 'pillowcases',
@@ -126,8 +126,8 @@ export const CORE_PRODUCTS: Product[] = [
     price: '€61.19',
     description: 'Premium construction for skin and hair health. Reduces friction by 40% compared to standard percale.',
     features: ['Envelope closure', 'Smooth texture', 'Set of 2'],
-    // Image: Pillowcase Set By SANTI
-    imageUrl: 'https://sleepbysanti.co/cdn/shop/products/pillowcase_500x.jpg'
+    // Image: Pillowcase Set from CSV
+    imageUrl: 'https://sleepbysanti.co/cdn/shop/products/O1CN01J7t2H11VtgGijgkKI__1953832711.jpg_430x430q90_400x.jpg?v=1607409698'
   },
   {
     id: 'wulf-blanket',
