@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SANTI | Luxury Hotel Wholesale</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['"Cormorant Garamond"', 'serif'],
+              sans: ['"Montserrat"', 'sans-serif'],
+            },
+            colors: {
+              gold: {
+                400: '#D4AF37',
+                500: '#C5A028',
+                600: '#B08D1E',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #0c0a09; /* stone-950 */
+        color: #e7e5e4; /* stone-200 */
+      }
+      
+      /* Print / PDF Styles */
+      @media print {
+        @page { margin: 0.5cm; }
+        body { 
+          background-color: white !important; 
+          color: black !important; 
+          -webkit-print-color-adjust: exact; 
+        }
+        .bg-stone-950, .bg-stone-900, .bg-stone-800, .bg-stone-950\/50, .bg-gradient-to-b, .bg-gradient-to-t { 
+          background-color: white !important; 
+          background-image: none !important;
+        }
+        .text-stone-100, .text-stone-200, .text-stone-300, .text-stone-400, .text-stone-500 { 
+          color: #1c1917 !important; /* stone-900 */
+        }
+        .text-gold-500, .text-gold-400 {
+          color: #b45309 !important; /* darker gold/amber for print readability */
+        }
+        .border-stone-800, .border-stone-900, .border-stone-700 {
+          border-color: #e5e7eb !important; /* gray-200 */
+        }
+        /* Hide decorative or interactive elements */
+        .no-print, button, .absolute.inset-0, .animate-bounce { 
+          display: none !important; 
+        }
+        /* Ensure images print clearly */
+        img { 
+          opacity: 1 !important; 
+          filter: brightness(1.1); /* Slight brighten for print */
+        }
+        /* Layout adjustments for PDF density */
+        section { padding-top: 2rem !important; padding-bottom: 2rem !important; page-break-inside: avoid; }
+        .grid-cols-1 { 
+          display: grid !important; 
+          grid-template-columns: repeat(3, 1fr) !important; 
+          gap: 1.5rem !important; 
+        }
+        h1 { font-size: 3rem !important; color: black !important; }
+        h2 { color: black !important; }
+        /* Reset Hero height */
+        .min-h-screen { min-height: auto !important; height: auto !important; padding-bottom: 2rem; }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
