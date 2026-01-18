@@ -43,7 +43,7 @@ export const VELVET_COLLECTION: Product[] = [
     description: 'Plush feel with a subtle sheen from cotton-acrylic yarn mix. Engineered for high-traffic use with resistance to pilling.',
     features: ['Plush texture', 'Commercial Durability', 'Elegant drape'],
     // Image: Kefalonia (Black variant from CSV)
-    imageUrl: 'https://sleepbysanti.co/cdn/shop/files/Black_a5e01a1a-1068-42a9-8a16-389aa533eb93_800x.jpg?v=1756631017',
+    imageUrl: '/images/products/kefalonia.jpg',
     colors: ['Coffee', 'Ivory', 'Gray']
   },
   {
@@ -85,8 +85,8 @@ export const EUCALYPTUS_COLLECTION: Product[] = [
     price: '€271.13',
     description: 'Superior moisture-wicking and wrinkle-resistant fabric. Reduces housekeeping ironing time by up to 15%.',
     features: ['Moisture-wicking', 'Wrinkle-resistant', 'Durable weave'],
-    // Image: BRISA Over-Sized Eucalyptus Bedding Set (Noir)
-    imageUrl: 'https://sleepbysanti.co/cdn/shop/files/NOIR-NOIR_500x.jpg',
+    // Image: BRISA Over-Sized Eucalyptus Bedding Set (White)
+    imageUrl: '/images/products/brisa.jpg',
     colors: ['Crisp White', 'Dove Grey']
   },
   {
@@ -109,7 +109,7 @@ export const CORE_PRODUCTS: Product[] = [
     description: '100% cotton exterior with alternative down filling (~7 lbs). Mimics the loft of Hungarian goose down without the allergens.',
     features: ['Hypoallergenic fill', 'All-season weight', 'Cloud-like loft'],
     // Image: Ultra-Poof Comforter By SANTI
-    imageUrl: 'https://sleepbysanti.co/cdn/shop/products/BeddingComforter_500x.jpg'
+    imageUrl: '/images/products/ultra-poof.png'
   },
   {
     id: 'sheet-set',
@@ -127,7 +127,7 @@ export const CORE_PRODUCTS: Product[] = [
     description: 'Premium construction for skin and hair health. Reduces friction by 40% compared to standard percale.',
     features: ['Envelope closure', 'Smooth texture', 'Set of 2'],
     // Image: Pillowcase Set from CSV
-    imageUrl: 'https://sleepbysanti.co/cdn/shop/products/O1CN01J7t2H11VtgGijgkKI__1953832711.jpg_430x430q90_400x.jpg?v=1607409698'
+    imageUrl: '/images/products/pillowcase-set.jpg'
   },
   {
     id: 'wulf-blanket',
@@ -136,7 +136,31 @@ export const CORE_PRODUCTS: Product[] = [
     description: 'Luxury throw available in couch and bed sizes. Adds texture and warmth to the foot of the bed.',
     features: ['Heirloom quality', 'Dense weave', 'Accent piece'],
     // Image: WULF Blanket By SANTI
-    imageUrl: 'https://sleepbysanti.co/cdn/shop/files/Post-Photoshop1_500x.png'
+    imageUrl: '/images/products/wulf-blanket.jpg'
+  },
+  {
+    id: 'goose-down-comforter',
+    name: 'Goose-Down Comforter',
+    price: '€349.00',
+    description: 'Premium Hungarian goose-down filling with a luxurious 100% cotton sateen shell. The ultimate in natural warmth and breathability.',
+    features: ['Hungarian goose-down', '100% cotton sateen shell', 'Superior warmth-to-weight ratio'],
+    imageUrl: '/images/products/goose-down-comforter.png'
+  },
+  {
+    id: 'yris',
+    name: 'YRIS',
+    price: '€275.00',
+    description: 'Elegant bedding set with refined craftsmanship. Designed for discerning hospitality properties seeking timeless sophistication.',
+    features: ['Premium materials', 'Refined design', 'Commercial durability'],
+    imageUrl: '/images/products/yris.jpg'
+  },
+  {
+    id: 'ayre',
+    name: 'AYRE',
+    price: '€265.00',
+    description: 'Light and airy bedding collection perfect for year-round comfort. Combines breathability with elegant aesthetics.',
+    features: ['Breathable construction', 'Year-round comfort', 'Elegant finish'],
+    imageUrl: '/images/products/ayre.jpg'
   }
 ];
 
