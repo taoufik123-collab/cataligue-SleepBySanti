@@ -12,12 +12,12 @@ const ContactFooter: React.FC = () => {
         </p>
         
         <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-16">
-          <a 
-            href="mailto:support@sleepbysanti.co" 
+          <a
+            href="mailto:stanley.hugh@sleepbysantihouse.com?subject=Sample%20Request%20-%20SANTI%20Wholesale"
             className="group flex items-center gap-4 px-8 py-4 bg-stone-800 border border-stone-700 hover:border-gold-500 hover:bg-stone-800/80 transition-all duration-300"
           >
             <Mail className="text-gold-500 group-hover:scale-110 transition-transform" />
-            <span className="text-stone-200">support@sleepbysanti.co</span>
+            <span className="text-stone-200">stanley.hugh@sleepbysantihouse.com</span>
           </a>
           
           <div className="flex items-center gap-4 px-8 py-4 border border-transparent text-stone-500">
