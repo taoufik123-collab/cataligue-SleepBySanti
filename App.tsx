@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import CatalogSection from './components/CatalogSection';
 import WhyUs from './components/WhyUs';
@@ -10,6 +11,7 @@ import { Mail } from 'lucide-react';
 const App: React.FC = () => {
   return (
     <div className="bg-stone-950 min-h-screen font-sans selection:bg-gold-500/30 selection:text-gold-200">
+      <Navbar />
       <Hero />
 
       {/* Research & Why Us Section */}

@@ -1,32 +1,43 @@
 import React from 'react';
-import { Package, Clock, Ruler } from 'lucide-react';
+import { Package, Clock, Ruler, ChevronRight } from 'lucide-react';
 
 const ProductGuide: React.FC = () => {
   const recommendations = [
     {
+      id: 'yris',
       product: 'YRIS (120S Sateen)',
       bestFor: '5-star luxury hotels, wellness resorts, presidential suites, heritage properties',
       highlight: 'Premium'
     },
     {
+      id: 'ayre',
       product: 'AYRE (80S Sateen)',
       bestFor: 'Upscale boutique hotels, 4-star lifestyle hotels, luxury business hotels, urban design hotels',
       highlight: 'Versatile'
     },
     {
+      id: 'brisa',
       product: 'BRISA (Eucalyptus)',
       bestFor: 'Wellness hotels, eco-luxury resorts, beach hotels, tropical destinations',
       highlight: 'Cooling'
     },
     {
+      id: 'kefalonia',
       product: 'Kefalonia (Velvet)',
       bestFor: 'Cold-climate hotels, mountain lodges, alpine resorts, romantic boutique hotels',
       highlight: 'Warmth'
     }
   ];
 
+  const scrollToProduct = (productId: string) => {
+    const element = document.getElementById(`product-${productId}`);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  };
+
   return (
-    <section className="py-20 bg-stone-950 px-6">
+    <section id="guide" className="py-20 bg-stone-950 px-6">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -45,16 +56,18 @@ const ProductGuide: React.FC = () => {
                 <th className="text-left py-4 px-4 text-stone-400 text-xs uppercase tracking-widest font-medium">Collection</th>
                 <th className="text-left py-4 px-4 text-stone-400 text-xs uppercase tracking-widest font-medium">Type</th>
                 <th className="text-left py-4 px-4 text-stone-400 text-xs uppercase tracking-widest font-medium">Recommended For</th>
+                <th className="w-12"></th>
               </tr>
             </thead>
             <tbody>
-              {recommendations.map((rec, index) => (
+              {recommendations.map((rec) => (
                 <tr
-                  key={index}
-                  className="border-b border-stone-800/50 hover:bg-stone-900/50 transition-colors"
+                  key={rec.id}
+                  onClick={() => scrollToProduct(rec.id)}
+                  className="border-b border-stone-800/50 hover:bg-stone-900/50 transition-colors cursor-pointer group"
                 >
                   <td className="py-5 px-4">
-                    <span className="text-white font-serif text-lg">{rec.product}</span>
+                    <span className="text-white font-serif text-lg group-hover:text-gold-400 transition-colors">{rec.product}</span>
                   </td>
                   <td className="py-5 px-4">
                     <span className="text-gold-500 text-xs uppercase tracking-wider bg-gold-500/10 px-3 py-1 border border-gold-500/20">
@@ -63,6 +76,9 @@ const ProductGuide: React.FC = () => {
                   </td>
                   <td className="py-5 px-4 text-stone-400 text-sm font-light">
                     {rec.bestFor}
+                  </td>
+                  <td className="py-5 px-4">
+                    <ChevronRight className="w-5 h-5 text-stone-600 group-hover:text-gold-500 transition-colors" />
                   </td>
                 </tr>
               ))}

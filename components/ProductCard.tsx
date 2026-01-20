@@ -10,7 +10,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const [imageError, setImageError] = useState(false);
 
   return (
-    <div className="group bg-stone-900 border border-stone-800 hover:border-gold-600/50 transition-colors duration-300 flex flex-col h-full break-inside-avoid">
+    <div id={`product-${product.id}`} className="group bg-stone-900 border border-stone-800 hover:border-gold-600/50 transition-colors duration-300 flex flex-col h-full break-inside-avoid">
       <div className="relative aspect-[3/4] overflow-hidden bg-stone-800">
         {!imageError ? (
           <img 
