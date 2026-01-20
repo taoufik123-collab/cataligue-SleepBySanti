@@ -2,42 +2,46 @@ import React from 'react';
 import { Package, Clock, Ruler, ChevronRight } from 'lucide-react';
 
 const ProductGuide: React.FC = () => {
-  const recommendations = [
+  const products = [
     {
       id: 'yris',
-      product: 'YRIS',
+      name: 'YRIS',
       feel: 'Crisp',
       warmth: 'All-season',
       breathability: 'High',
       climate: 'All-season',
-      durability: 'High'
+      durability: 'High',
+      recommendedFor: '5-star luxury hotels & resorts, High-end wellness resorts, Flagship suites / presidential suites, Heritage luxury properties'
     },
     {
       id: 'ayre',
-      product: 'AYRE',
+      name: 'AYRE',
       feel: 'Smooth',
       warmth: 'All-season',
       breathability: 'Medium',
       climate: 'All-season',
-      durability: 'High'
+      durability: 'High',
+      recommendedFor: 'Upscale boutique hotels, 4-star lifestyle hotels, Luxury business hotels, Urban design hotels'
     },
     {
       id: 'kefalonia',
-      product: 'KEFALONIA',
+      name: 'KEFALONIA',
       feel: 'Plush',
       warmth: 'Warm',
       breathability: 'Low',
       climate: 'Cold',
-      durability: 'Moderate'
+      durability: 'Moderate',
+      recommendedFor: 'Cold-climate hotels, Mountain lodges & alpine resorts, Winter destinations, Romantic boutique hotels'
     },
     {
       id: 'brisa',
-      product: 'BRISA',
+      name: 'BRISA',
       feel: 'Cool',
       warmth: 'Light',
       breathability: 'High',
       climate: 'Hot',
-      durability: 'Moderate'
+      durability: 'Moderate',
+      recommendedFor: 'Wellness hotels & retreats, Eco-luxury resorts, Beach hotels, Tropical destinations'
     }
   ];
 
@@ -60,8 +64,8 @@ const ProductGuide: React.FC = () => {
           </p>
         </div>
 
-        {/* Product Comparison Table */}
-        <div className="mb-16 overflow-x-auto">
+        {/* Product Specs Comparison Table */}
+        <div className="mb-12 overflow-x-auto">
           <table className="w-full border-collapse min-w-[800px]">
             <thead>
               <tr className="border-b border-stone-800">
@@ -75,30 +79,20 @@ const ProductGuide: React.FC = () => {
               </tr>
             </thead>
             <tbody>
-              {recommendations.map((rec) => (
+              {products.map((product) => (
                 <tr
-                  key={rec.id}
-                  onClick={() => scrollToProduct(rec.id)}
+                  key={product.id}
+                  onClick={() => scrollToProduct(product.id)}
                   className="border-b border-stone-800/50 hover:bg-stone-900/50 transition-colors cursor-pointer group"
                 >
                   <td className="py-5 px-4">
-                    <span className="text-white font-semibold text-base group-hover:text-gold-400 transition-colors">{rec.product}</span>
+                    <span className="text-white font-semibold text-base group-hover:text-gold-400 transition-colors">{product.name}</span>
                   </td>
-                  <td className="py-5 px-4 text-stone-300 text-sm">
-                    {rec.feel}
-                  </td>
-                  <td className="py-5 px-4 text-stone-300 text-sm">
-                    {rec.warmth}
-                  </td>
-                  <td className="py-5 px-4 text-stone-300 text-sm">
-                    {rec.breathability}
-                  </td>
-                  <td className="py-5 px-4 text-stone-300 text-sm">
-                    {rec.climate}
-                  </td>
-                  <td className="py-5 px-4 text-stone-300 text-sm">
-                    {rec.durability}
-                  </td>
+                  <td className="py-5 px-4 text-stone-300 text-sm">{product.feel}</td>
+                  <td className="py-5 px-4 text-stone-300 text-sm">{product.warmth}</td>
+                  <td className="py-5 px-4 text-stone-300 text-sm">{product.breathability}</td>
+                  <td className="py-5 px-4 text-stone-300 text-sm">{product.climate}</td>
+                  <td className="py-5 px-4 text-stone-300 text-sm">{product.durability}</td>
                   <td className="py-5 px-2">
                     <ChevronRight className="w-5 h-5 text-stone-600 group-hover:text-gold-500 transition-colors" />
                   </td>
@@ -106,6 +100,25 @@ const ProductGuide: React.FC = () => {
               ))}
             </tbody>
           </table>
+        </div>
+
+        {/* Recommended For Section */}
+        <div className="mb-16">
+          <h3 className="text-xl font-serif text-white mb-6 text-center">Recommended For</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            {products.map((product) => (
+              <div
+                key={product.id}
+                onClick={() => scrollToProduct(product.id)}
+                className="bg-stone-900/50 border border-stone-800 p-5 hover:border-gold-500/30 transition-colors cursor-pointer group"
+              >
+                <h4 className="text-gold-500 font-semibold text-sm uppercase tracking-wider mb-3 group-hover:text-gold-400">{product.name}</h4>
+                <p className="text-stone-400 text-sm font-light leading-relaxed">
+                  {product.recommendedFor}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Order Info Cards */}
