@@ -15,10 +15,10 @@ const Hero: React.FC = () => {
     <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-stone-950">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0 pointer-events-none select-none">
-        <img 
-          src="https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=2500&auto=format&fit=crop" 
-          alt="Luxury Hotel Bedroom Suite" 
-          className="w-full h-full object-cover opacity-50"
+        <img
+          src="/images/hero-bg.jpg"
+          alt="Luxury Hotel Bedroom Suite"
+          className="w-full h-full object-cover opacity-60"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-stone-950/80 via-stone-950/40 to-stone-950" />
       </div>
