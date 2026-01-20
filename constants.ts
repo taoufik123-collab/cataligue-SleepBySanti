@@ -1,6 +1,6 @@
 import { Collection, Product } from './types';
 
-export const BRAND_INTRO = `SANTI bridges the gap between boutique luxury and commercial durability. Our collections are built from premium materials: Long-Staple Cotton Sateen, Eucalyptus Lyocell, and plush Velvet. Constructed to meet the demands of commercial laundry cycles while delivering the guest experience of a five-star property.`;
+export const BRAND_INTRO = `SĀNTI bridges the gap between boutique luxury and commercial durability. Our collections are built from premium materials: Long-Staple Cotton Sateen, Eucalyptus Lyocell, and plush Velvet. Constructed to meet the demands of commercial laundry cycles while delivering the guest experience of a five-star property.`;
 
 // B2B Wholesale Catalog - Organized by Category
 // All images use local paths from public/images/products/
@@ -40,7 +40,7 @@ export const SHEETS_COLLECTION: Product[] = [
     description: 'A plush velvet finish set for texture-forward room designs. Adds immediate visual warmth and tactile luxury.',
     features: ['Premium Velvet Finish', 'Includes: Duvet Cover, Flat & Fitted Sheet, Pillowcases', 'Commercial Durability'],
     imageUrl: '/images/products/kefalonia.jpg',
-    colors: ['Coffee', 'White', 'Black']
+    colors: ['Dark Gray', 'White', 'Black']
   }
 ];
 
@@ -96,7 +96,7 @@ export const BENEFITS = [
   },
   {
     title: 'Sustainability & ESG Goals',
-    description: 'Eucalyptus Lyocell (TENCEL™) is produced in a closed-loop process that recovers over 95% of water and solvent used. Choosing SANTI Eucalyptus products supports your property\'s water conservation and sustainability reporting.'
+    description: 'Eucalyptus Lyocell (TENCEL™) is produced in a closed-loop process that recovers over 95% of water and solvent used. Choosing SĀNTI Eucalyptus products supports your property\'s water conservation and sustainability reporting.'
   },
   {
     title: 'Hypoallergenic Assurance',

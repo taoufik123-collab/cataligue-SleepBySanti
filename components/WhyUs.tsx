@@ -12,9 +12,9 @@ const WhyUs: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <span className="text-gold-500 text-xs font-bold tracking-[0.2em] uppercase mb-3 block">Research-Backed Hospitality</span>
-          <h2 className="text-3xl md:text-5xl font-serif text-white mb-6">The SANTI Advantage</h2>
+          <h2 className="text-3xl md:text-5xl font-serif text-white mb-6">The SĀNTI Advantage</h2>
           <p className="text-stone-400 max-w-3xl mx-auto font-light mb-10 text-lg leading-relaxed">
-            We don't just sell bedding; we engineer sleep environments. Based on market research and textile engineering, partnering with SANTI delivers measurable results for your property's bottom line and guest satisfaction scores.
+            We don't just sell bedding; we engineer sleep environments. Based on market research and textile engineering, partnering with SĀNTI delivers measurable results for your property's bottom line and guest satisfaction scores.
           </p>
           <div className="w-24 h-px bg-gold-500 mx-auto"></div>
         </div>

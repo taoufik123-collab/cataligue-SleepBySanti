@@ -7,7 +7,7 @@ const ContactFooter: React.FC = () => {
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-serif text-white mb-8">Request Wholesale Pricing & Samples</h2>
         <p className="text-stone-400 mb-12 max-w-2xl mx-auto font-light leading-relaxed">
-          Experience the quality of SANTI firsthand. Contact our hospitality team to request a sample kit, 
+          Experience the quality of SĀNTI firsthand. Contact our hospitality team to request a sample kit,
           discuss custom requirements, or receive our full wholesale price list.
         </p>
         
@@ -28,7 +28,7 @@ const ContactFooter: React.FC = () => {
 
         <div className="text-stone-600 text-xs font-light">
           <p className="mb-2">Note: Prices shown in catalog are retail. Significant wholesale discounts available for bulk orders.</p>
-          <p>© {new Date().getFullYear()} Sleep by Santi. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Sleep by Sānti. All rights reserved.</p>
         </div>
       </div>
     </footer>

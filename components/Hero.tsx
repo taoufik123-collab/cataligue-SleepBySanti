@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
       {/* Content */}
       <div className="relative z-10 max-w-4xl px-6 text-center py-20">
         <h1 className="text-5xl md:text-8xl font-serif text-white tracking-wide mb-6 drop-shadow-2xl">
-          SANTI
+          SĀNTI
         </h1>
         <p className="text-xl md:text-2xl font-light text-stone-200 mb-8 tracking-[0.3em] uppercase border-y border-stone-600/50 py-4 inline-block backdrop-blur-sm">
           Wholesale Collection

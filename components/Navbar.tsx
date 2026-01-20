@@ -51,7 +51,7 @@ const Navbar: React.FC = () => {
             }}
             className="text-white font-serif text-xl tracking-wider hover:text-gold-400 transition-colors"
           >
-            SANTI
+            SĀNTI
           </a>
 
           {/* Desktop Navigation */}

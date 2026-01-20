@@ -5,27 +5,39 @@ const ProductGuide: React.FC = () => {
   const recommendations = [
     {
       id: 'yris',
-      product: 'YRIS (120S Sateen)',
-      bestFor: '5-star luxury hotels, wellness resorts, presidential suites, heritage properties',
-      highlight: 'Premium'
+      product: 'YRIS',
+      feel: 'Crisp',
+      warmth: 'All-season',
+      breathability: 'High',
+      climate: 'All-season',
+      durability: 'High'
     },
     {
       id: 'ayre',
-      product: 'AYRE (80S Sateen)',
-      bestFor: 'Upscale boutique hotels, 4-star lifestyle hotels, luxury business hotels, urban design hotels',
-      highlight: 'Versatile'
-    },
-    {
-      id: 'brisa',
-      product: 'BRISA (Eucalyptus)',
-      bestFor: 'Wellness hotels, eco-luxury resorts, beach hotels, tropical destinations',
-      highlight: 'Cooling'
+      product: 'AYRE',
+      feel: 'Smooth',
+      warmth: 'All-season',
+      breathability: 'Medium',
+      climate: 'All-season',
+      durability: 'High'
     },
     {
       id: 'kefalonia',
-      product: 'Kefalonia (Velvet)',
-      bestFor: 'Cold-climate hotels, mountain lodges, alpine resorts, romantic boutique hotels',
-      highlight: 'Warmth'
+      product: 'KEFALONIA',
+      feel: 'Plush',
+      warmth: 'Warm',
+      breathability: 'Low',
+      climate: 'Cold',
+      durability: 'Moderate'
+    },
+    {
+      id: 'brisa',
+      product: 'BRISA',
+      feel: 'Cool',
+      warmth: 'Light',
+      breathability: 'High',
+      climate: 'Hot',
+      durability: 'Moderate'
     }
   ];
 
@@ -38,25 +50,28 @@ const ProductGuide: React.FC = () => {
 
   return (
     <section id="guide" className="py-20 bg-stone-950 px-6">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="text-gold-500 text-xs font-bold tracking-[0.2em] uppercase mb-3 block">Quick Reference</span>
           <h2 className="text-3xl md:text-4xl font-serif text-white mb-4">Product Selection Guide</h2>
           <p className="text-stone-400 max-w-2xl mx-auto font-light">
-            Choose the right collection for your property type and guest expectations.
+            Compare collections at a glance. Click any row to view product details.
           </p>
         </div>
 
         {/* Product Comparison Table */}
         <div className="mb-16 overflow-x-auto">
-          <table className="w-full border-collapse">
+          <table className="w-full border-collapse min-w-[800px]">
             <thead>
               <tr className="border-b border-stone-800">
                 <th className="text-left py-4 px-4 text-stone-400 text-xs uppercase tracking-widest font-medium">Collection</th>
-                <th className="text-left py-4 px-4 text-stone-400 text-xs uppercase tracking-widest font-medium">Type</th>
-                <th className="text-left py-4 px-4 text-stone-400 text-xs uppercase tracking-widest font-medium">Recommended For</th>
-                <th className="w-12"></th>
+                <th className="text-left py-4 px-4 text-stone-400 text-xs uppercase tracking-widest font-medium">Feel / Hand Feel</th>
+                <th className="text-left py-4 px-4 text-stone-400 text-xs uppercase tracking-widest font-medium">Warmth Level</th>
+                <th className="text-left py-4 px-4 text-stone-400 text-xs uppercase tracking-widest font-medium">Breathability</th>
+                <th className="text-left py-4 px-4 text-stone-400 text-xs uppercase tracking-widest font-medium">Climate Suitability</th>
+                <th className="text-left py-4 px-4 text-stone-400 text-xs uppercase tracking-widest font-medium whitespace-nowrap">Commercial Laundry Durability</th>
+                <th className="w-10"></th>
               </tr>
             </thead>
             <tbody>
@@ -67,17 +82,24 @@ const ProductGuide: React.FC = () => {
                   className="border-b border-stone-800/50 hover:bg-stone-900/50 transition-colors cursor-pointer group"
                 >
                   <td className="py-5 px-4">
-                    <span className="text-white font-serif text-lg group-hover:text-gold-400 transition-colors">{rec.product}</span>
+                    <span className="text-white font-semibold text-base group-hover:text-gold-400 transition-colors">{rec.product}</span>
                   </td>
-                  <td className="py-5 px-4">
-                    <span className="text-gold-500 text-xs uppercase tracking-wider bg-gold-500/10 px-3 py-1 border border-gold-500/20">
-                      {rec.highlight}
-                    </span>
+                  <td className="py-5 px-4 text-stone-300 text-sm">
+                    {rec.feel}
                   </td>
-                  <td className="py-5 px-4 text-stone-400 text-sm font-light">
-                    {rec.bestFor}
+                  <td className="py-5 px-4 text-stone-300 text-sm">
+                    {rec.warmth}
                   </td>
-                  <td className="py-5 px-4">
+                  <td className="py-5 px-4 text-stone-300 text-sm">
+                    {rec.breathability}
+                  </td>
+                  <td className="py-5 px-4 text-stone-300 text-sm">
+                    {rec.climate}
+                  </td>
+                  <td className="py-5 px-4 text-stone-300 text-sm">
+                    {rec.durability}
+                  </td>
+                  <td className="py-5 px-2">
                     <ChevronRight className="w-5 h-5 text-stone-600 group-hover:text-gold-500 transition-colors" />
                   </td>
                 </tr>
