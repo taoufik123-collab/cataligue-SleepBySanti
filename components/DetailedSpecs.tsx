@@ -8,7 +8,7 @@ const DetailedSpecs: React.FC = () => {
       warmth: 'Light',
       breathability: 'Excellent',
       climate: 'Warm / Year-round',
-      durability: 'High (500+ washes)'
+      durability: 'High'
     },
     {
       collection: 'AYRE (80S Sateen)',
@@ -16,7 +16,7 @@ const DetailedSpecs: React.FC = () => {
       warmth: 'Medium',
       breathability: 'Very Good',
       climate: 'Year-round',
-      durability: 'Very High (600+ washes)'
+      durability: 'Very High'
     },
     {
       collection: 'BRISA (Eucalyptus)',
@@ -24,7 +24,7 @@ const DetailedSpecs: React.FC = () => {
       warmth: 'Light',
       breathability: 'Superior',
       climate: 'Hot / Humid',
-      durability: 'High (500+ washes)'
+      durability: 'High'
     },
     {
       collection: 'Kefalonia (Velvet)',
@@ -32,12 +32,12 @@ const DetailedSpecs: React.FC = () => {
       warmth: 'High',
       breathability: 'Moderate',
       climate: 'Cold / Winter',
-      durability: 'High (400+ washes)'
+      durability: 'High'
     }
   ];
 
   return (
-    <section className="py-20 bg-stone-900 px-6">
+    <section id="specs" className="py-20 bg-stone-900 px-6">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">

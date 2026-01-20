@@ -1,6 +1,6 @@
 import { Collection, Product } from './types';
 
-export const BRAND_INTRO = `SĀNTI bridges the gap between boutique luxury and commercial durability. Our collections are built from premium materials: Long-Staple Cotton Sateen, Eucalyptus Lyocell, and plush Velvet. Constructed to meet the demands of commercial laundry cycles while delivering the guest experience of a five-star property.`;
+export const BRAND_INTRO = `Premium bedding engineered for hospitality. Long-Staple Cotton Sateen, Eucalyptus Lyocell, and Velvet collections that deliver five-star guest comfort while withstanding commercial laundry demands.`;
 
 // B2B Wholesale Catalog - Organized by Category
 // All images use local paths from public/images/products/

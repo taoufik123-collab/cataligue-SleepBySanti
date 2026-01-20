@@ -6,12 +6,13 @@ const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { label: 'Why SANTI?', href: 'why-us' },
+    { label: 'Why SĀNTI?', href: 'why-us' },
     { label: 'Sheets', href: 'sheets' },
     { label: 'Comforters', href: 'comforters' },
     { label: 'Pillows', href: 'pillows' },
     { label: 'Accessories', href: 'accessories' },
     { label: 'Quick Guide', href: 'guide' },
+    { label: 'Specs', href: 'specs' },
     { label: 'Contact', href: 'contact' },
   ];
 
