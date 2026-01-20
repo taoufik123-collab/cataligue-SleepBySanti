@@ -2,46 +2,30 @@ import React from 'react';
 import { Package, Clock, Ruler, ChevronRight } from 'lucide-react';
 
 const ProductGuide: React.FC = () => {
-  const products = [
+  const recommendations = [
     {
       id: 'yris',
-      name: 'YRIS',
-      feel: 'Crisp',
-      warmth: 'All-season',
-      breathability: 'High',
-      climate: 'All-season',
-      durability: 'High',
-      recommendedFor: '5-star luxury hotels & resorts, High-end wellness resorts, Flagship suites / presidential suites, Heritage luxury properties'
+      product: 'YRIS (120S Sateen)',
+      type: 'Premium',
+      bestFor: '5-star luxury hotels & resorts, High-end wellness resorts, Flagship suites / presidential suites, Heritage luxury properties'
     },
     {
       id: 'ayre',
-      name: 'AYRE',
-      feel: 'Smooth',
-      warmth: 'All-season',
-      breathability: 'Medium',
-      climate: 'All-season',
-      durability: 'High',
-      recommendedFor: 'Upscale boutique hotels, 4-star lifestyle hotels, Luxury business hotels, Urban design hotels'
-    },
-    {
-      id: 'kefalonia',
-      name: 'KEFALONIA',
-      feel: 'Plush',
-      warmth: 'Warm',
-      breathability: 'Low',
-      climate: 'Cold',
-      durability: 'Moderate',
-      recommendedFor: 'Cold-climate hotels, Mountain lodges & alpine resorts, Winter destinations, Romantic boutique hotels'
+      product: 'AYRE (80S Sateen)',
+      type: 'Versatile',
+      bestFor: 'Upscale boutique hotels, 4-star lifestyle hotels, Luxury business hotels, Urban design hotels'
     },
     {
       id: 'brisa',
-      name: 'BRISA',
-      feel: 'Cool',
-      warmth: 'Light',
-      breathability: 'High',
-      climate: 'Hot',
-      durability: 'Moderate',
-      recommendedFor: 'Wellness hotels & retreats, Eco-luxury resorts, Beach hotels, Tropical destinations'
+      product: 'BRISA (Eucalyptus)',
+      type: 'Cooling',
+      bestFor: 'Wellness hotels & retreats, Eco-luxury resorts, Beach hotels, Tropical destinations'
+    },
+    {
+      id: 'kefalonia',
+      product: 'Kefalonia (Velvet)',
+      type: 'Warmth',
+      bestFor: 'Cold-climate hotels, Mountain lodges & alpine resorts, Winter destinations, Romantic boutique hotels'
     }
   ];
 
@@ -54,71 +38,52 @@ const ProductGuide: React.FC = () => {
 
   return (
     <section id="guide" className="py-20 bg-stone-950 px-6">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="text-gold-500 text-xs font-bold tracking-[0.2em] uppercase mb-3 block">Quick Reference</span>
           <h2 className="text-3xl md:text-4xl font-serif text-white mb-4">Product Selection Guide</h2>
           <p className="text-stone-400 max-w-2xl mx-auto font-light">
-            Compare collections at a glance. Click any row to view product details.
+            Choose the right collection for your property type and guest expectations.
           </p>
         </div>
 
-        {/* Product Specs Comparison Table */}
-        <div className="mb-12 overflow-x-auto">
-          <table className="w-full border-collapse min-w-[800px]">
+        {/* Product Comparison Table */}
+        <div className="mb-16 overflow-x-auto">
+          <table className="w-full border-collapse">
             <thead>
               <tr className="border-b border-stone-800">
                 <th className="text-left py-4 px-4 text-stone-400 text-xs uppercase tracking-widest font-medium">Collection</th>
-                <th className="text-left py-4 px-4 text-stone-400 text-xs uppercase tracking-widest font-medium">Feel / Hand Feel</th>
-                <th className="text-left py-4 px-4 text-stone-400 text-xs uppercase tracking-widest font-medium">Warmth Level</th>
-                <th className="text-left py-4 px-4 text-stone-400 text-xs uppercase tracking-widest font-medium">Breathability</th>
-                <th className="text-left py-4 px-4 text-stone-400 text-xs uppercase tracking-widest font-medium">Climate Suitability</th>
-                <th className="text-left py-4 px-4 text-stone-400 text-xs uppercase tracking-widest font-medium whitespace-nowrap">Commercial Laundry Durability</th>
-                <th className="w-10"></th>
+                <th className="text-left py-4 px-4 text-stone-400 text-xs uppercase tracking-widest font-medium">Type</th>
+                <th className="text-left py-4 px-4 text-stone-400 text-xs uppercase tracking-widest font-medium">Recommended For</th>
+                <th className="w-12"></th>
               </tr>
             </thead>
             <tbody>
-              {products.map((product) => (
+              {recommendations.map((rec) => (
                 <tr
-                  key={product.id}
-                  onClick={() => scrollToProduct(product.id)}
+                  key={rec.id}
+                  onClick={() => scrollToProduct(rec.id)}
                   className="border-b border-stone-800/50 hover:bg-stone-900/50 transition-colors cursor-pointer group"
                 >
                   <td className="py-5 px-4">
-                    <span className="text-white font-semibold text-base group-hover:text-gold-400 transition-colors">{product.name}</span>
+                    <span className="text-white font-serif text-lg group-hover:text-gold-400 transition-colors">{rec.product}</span>
                   </td>
-                  <td className="py-5 px-4 text-stone-300 text-sm">{product.feel}</td>
-                  <td className="py-5 px-4 text-stone-300 text-sm">{product.warmth}</td>
-                  <td className="py-5 px-4 text-stone-300 text-sm">{product.breathability}</td>
-                  <td className="py-5 px-4 text-stone-300 text-sm">{product.climate}</td>
-                  <td className="py-5 px-4 text-stone-300 text-sm">{product.durability}</td>
-                  <td className="py-5 px-2">
+                  <td className="py-5 px-4">
+                    <span className="text-gold-500 text-xs uppercase tracking-wider bg-gold-500/10 px-3 py-1 border border-gold-500/20">
+                      {rec.type}
+                    </span>
+                  </td>
+                  <td className="py-5 px-4 text-stone-400 text-sm font-light">
+                    {rec.bestFor}
+                  </td>
+                  <td className="py-5 px-4">
                     <ChevronRight className="w-5 h-5 text-stone-600 group-hover:text-gold-500 transition-colors" />
                   </td>
                 </tr>
               ))}
             </tbody>
           </table>
-        </div>
-
-        {/* Recommended For Section */}
-        <div className="mb-16">
-          <h3 className="text-xl font-serif text-white mb-6 text-center">Recommended For</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            {products.map((product) => (
-              <div
-                key={product.id}
-                onClick={() => scrollToProduct(product.id)}
-                className="bg-stone-900/50 border border-stone-800 p-5 hover:border-gold-500/30 transition-colors cursor-pointer group"
-              >
-                <h4 className="text-gold-500 font-semibold text-sm uppercase tracking-wider mb-3 group-hover:text-gold-400">{product.name}</h4>
-                <p className="text-stone-400 text-sm font-light leading-relaxed">
-                  {product.recommendedFor}
-                </p>
-              </div>
-            ))}
-          </div>
         </div>
 
         {/* Order Info Cards */}

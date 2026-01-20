@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import CatalogSection from './components/CatalogSection';
 import WhyUs from './components/WhyUs';
 import ProductGuide from './components/ProductGuide';
+import DetailedSpecs from './components/DetailedSpecs';
 import ContactFooter from './components/ContactFooter';
 import { SHEETS_COLLECTION, COMFORTERS_COLLECTION, PILLOWS_COLLECTION, ACCESSORIES_COLLECTION } from './constants';
 import { Mail } from 'lucide-react';
@@ -49,6 +50,9 @@ const App: React.FC = () => {
           products={ACCESSORIES_COLLECTION}
         />
       </div>
+
+      {/* Detailed Specifications Table - After Products */}
+      <DetailedSpecs />
 
       <ContactFooter />
 
