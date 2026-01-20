@@ -17,6 +17,9 @@ const App: React.FC = () => {
       {/* Research & Why Us Section */}
       <WhyUs />
 
+      {/* Product Selection Guide with MOQ, Lead Time, Sizes */}
+      <ProductGuide />
+
       <div id="collections">
         <CatalogSection
           id="sheets"
@@ -46,9 +49,6 @@ const App: React.FC = () => {
           products={ACCESSORIES_COLLECTION}
         />
       </div>
-
-      {/* Product Selection Guide with MOQ, Lead Time, Sizes */}
-      <ProductGuide />
 
       <ContactFooter />
 
