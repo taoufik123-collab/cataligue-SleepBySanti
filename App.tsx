@@ -15,9 +15,6 @@ const App: React.FC = () => {
       <Navbar />
       <Hero />
 
-      {/* Research & Why Us Section */}
-      <WhyUs />
-
       {/* Product Selection Guide with MOQ, Lead Time, Sizes */}
       <ProductGuide />
 
@@ -53,6 +50,9 @@ const App: React.FC = () => {
 
       {/* Detailed Specifications Table - After Products */}
       <DetailedSpecs />
+
+      {/* Research & Why Us Section */}
+      <WhyUs />
 
       <ContactFooter />
 
